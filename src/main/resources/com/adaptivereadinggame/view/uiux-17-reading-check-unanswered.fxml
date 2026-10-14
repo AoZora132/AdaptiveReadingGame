@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.transform.Affine?>
+<Pane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.adaptivereadinggame.uiux.UiuxScreenController" id="uiux-screen-17" prefWidth="1280.0" prefHeight="720.0" minWidth="1280.0" minHeight="720.0" maxWidth="1280.0" maxHeight="720.0">
+  <fx:define>
+    <LinearGradient fx:id="burgundy" startX="0" startY="0" endX="0" endY="1" proportional="true">
+      <stops>
+        <Stop offset="0" color="#A82234"/>
+        <Stop offset="1" color="#73121F"/>
+      </stops>
+    </LinearGradient>
+  </fx:define>
+  <children>
+    <Rectangle x="0" y="0" width="1280" height="720" fill="#FFFFFF"/>
+    <Text text="Chapter 1: Reading Check" y="50" fill="#73121F" textOrigin="BASELINE" x="40" textAlignment="LEFT" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 26px; -fx-font-weight: bold; -fx-font-style: normal;"/>
+    <Group>
+      <children>
+        <Rectangle x="1090" y="24" width="150" height="54" fill="#FFFFFF" stroke="#000000" strokeWidth="2" arcWidth="8" arcHeight="8"/>
+        <Text text="MENU" y="59" fill="#000000" textOrigin="BASELINE" x="0" wrappingWidth="1280" textAlignment="CENTER" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 24px; -fx-font-weight: normal; -fx-font-style: normal;"/>
+      </children>
+    </Group>
+    <Text text="Question 1 of 5 · Easy" y="116" fill="#555555" textOrigin="BASELINE" x="110" textAlignment="LEFT" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 20px; -fx-font-weight: normal; -fx-font-style: normal;"/>
+    <Rectangle x="110" y="140" width="1060" height="145" fill="#FFFFFF" stroke="#73121F" strokeWidth="2" arcWidth="20" arcHeight="20"/>
+    <Text text="Read the passage:" y="175" fill="#73121F" textOrigin="BASELINE" x="140" textAlignment="LEFT" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 18px; -fx-font-weight: bold; -fx-font-style: normal;"/>
+    <Text text="Mara slipped the letter into her apron before the visitor entered." y="213" fill="#000000" textOrigin="BASELINE" x="140" textAlignment="LEFT" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 24px; -fx-font-weight: normal; -fx-font-style: normal;"/>
+    <Text text="She did not want anyone else to see the message." y="246.6" fill="#000000" textOrigin="BASELINE" x="140" textAlignment="LEFT" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 24px; -fx-font-weight: normal; -fx-font-style: normal;"/>
+    <Text text="Why does Mara hide the letter?" y="338" fill="#73121F" textOrigin="BASELINE" x="110" textAlignment="LEFT" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 27px; -fx-font-weight: bold; -fx-font-style: normal;"/>
+    <Group>
+      <children>
+        <Rectangle x="110" y="365" width="1060" height="58" fill="#FFFFFF" stroke="#73121F" strokeWidth="2" arcWidth="18" arcHeight="18"/>
+        <Text text="○ A. She wants to throw it away." y="403" fill="#000000" textOrigin="BASELINE" x="137" textAlignment="LEFT" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 23px; -fx-font-weight: normal; -fx-font-style: normal;"/>
+      </children>
+    </Group>
+    <Group>
+      <children>
+        <Rectangle x="110" y="437" width="1060" height="58" fill="#FFFFFF" stroke="#73121F" strokeWidth="2" arcWidth="18" arcHeight="18"/>
+        <Text text="○ B. She wants to keep the message private." y="475" fill="#000000" textOrigin="BASELINE" x="137" textAlignment="LEFT" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 23px; -fx-font-weight: normal; -fx-font-style: normal;"/>
+      </children>
+    </Group>
+    <Group>
+      <children>
+        <Rectangle x="110" y="509" width="1060" height="58" fill="#FFFFFF" stroke="#73121F" strokeWidth="2" arcWidth="18" arcHeight="18"/>
+        <Text text="○ C. She has forgotten how to read." y="547" fill="#000000" textOrigin="BASELINE" x="137" textAlignment="LEFT" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 23px; -fx-font-weight: normal; -fx-font-style: normal;"/>
+      </children>
+    </Group>
+    <Text text="Choose one answer, then submit." y="620" fill="#555555" textOrigin="BASELINE" x="110" textAlignment="LEFT" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 18px; -fx-font-weight: normal; -fx-font-style: normal;"/>
+    <Group opacity="0.4">
+      <children>
+        <Rectangle x="930" y="592" width="240" height="54" fill="$burgundy" stroke="#D4AF37" strokeWidth="3" arcWidth="32" arcHeight="32"/>
+        <Text text="SUBMIT" y="627" fill="#FFFFFF" textOrigin="BASELINE" x="0" wrappingWidth="1280" textAlignment="CENTER" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 24px; -fx-font-weight: bold; -fx-font-style: normal;"/>
+      </children>
+    </Group>
+    <Text text="No timed answering. Only your first submitted answer counts toward the score." y="690" fill="#555555" textOrigin="BASELINE" x="0" wrappingWidth="1280" textAlignment="CENTER" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 17px; -fx-font-weight: normal; -fx-font-style: normal;"/>
+    <Button layoutX="1090" layoutY="24" prefWidth="150" prefHeight="54" minWidth="150" minHeight="54" maxWidth="150" maxHeight="54" id="uiux-to-26" accessibleText="MENU" accessibleHelp="Visual prototype route to screen 26" styleClass="uiux-hotspot" onAction="#navigate"/>
+    <Button layoutX="110" layoutY="365" prefWidth="1060" prefHeight="58" minWidth="1060" minHeight="58" maxWidth="1060" maxHeight="58" id="uiux-to-19" accessibleText="A. She wants to throw it away." accessibleHelp="Visual prototype route to screen 19" styleClass="uiux-hotspot" onAction="#navigate"/>
+    <Button layoutX="110" layoutY="437" prefWidth="1060" prefHeight="58" minWidth="1060" minHeight="58" maxWidth="1060" maxHeight="58" id="uiux-to-18" accessibleText="B. She wants to keep the message private." accessibleHelp="Visual prototype route to screen 18" styleClass="uiux-hotspot" onAction="#navigate"/>
+    <Button layoutX="110" layoutY="509" prefWidth="1060" prefHeight="58" minWidth="1060" minHeight="58" maxWidth="1060" maxHeight="58" id="uiux-to-19" accessibleText="C. She has forgotten how to read." accessibleHelp="Visual prototype route to screen 19" styleClass="uiux-hotspot" onAction="#navigate"/>
+  </children>
+</Pane>

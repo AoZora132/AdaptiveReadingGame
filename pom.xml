@@ -76,4 +76,23 @@
             </plugin>
         </plugins>
     </build>
+
+    <!-- Launch the separate visual-only JavaFX reference without changing the real app entry point. -->
+    <profiles>
+        <profile>
+            <id>uiux-prototype</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.openjfx</groupId>
+                        <artifactId>javafx-maven-plugin</artifactId>
+                        <version>0.0.8</version>
+                        <configuration>
+                            <mainClass>com.adaptivereadinggame.uiux.UiuxPrototypeApp</mainClass>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
 </project>
