@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.transform.Affine?>
+<Pane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.adaptivereadinggame.uiux.UiuxScreenController" id="uiux-screen-01" prefWidth="1280.0" prefHeight="720.0" minWidth="1280.0" minHeight="720.0" maxWidth="1280.0" maxHeight="720.0">
+  <fx:define>
+    <LinearGradient fx:id="burgundy" startX="0" startY="0" endX="0" endY="1" proportional="true">
+      <stops>
+        <Stop offset="0" color="#A82234"/>
+        <Stop offset="1" color="#73121F"/>
+      </stops>
+    </LinearGradient>
+  </fx:define>
+  <children>
+    <Rectangle x="0" y="0" width="1280" height="720" fill="#FFFFFF"/>
+    <Text text="WELCOME" y="100" fill="#000000" textOrigin="BASELINE" x="0" wrappingWidth="1280" textAlignment="CENTER" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 58px; -fx-font-weight: normal; -fx-font-style: normal;"/>
+    <Group>
+      <transforms>
+        <Affine mxx="0.67" mxy="0" tx="427" myx="0" myy="0.67" ty="130"/>
+      </transforms>
+      <children>
+        <SVGPath content="M 316 88 C 291 22 233 26 206 63 C 164 119 82 92 71 55 C 61 19 102 6 115 29 C 129 53 97 49 105 34 M 316 88 C 275 49 232 61 190 78 C 149 95 122 80 150 54 C 177 31 239 36 259 65 C 284 99 248 104 237 88 M 316 88 C 277 18 219 18 171 44 C 120 70 66 116 21 75 C -18 39 7 -10 37 0 C 69 10 45 35 42 20 M 316 88 C 302 52 228 61 176 30 C 118 -5 138 48 230 64" fill="#00000000" stroke="black" strokeWidth="2.5"/>
+        <SVGPath content="M 316 88 C 291 22 233 26 206 63 C 164 119 82 92 71 55 C 61 19 102 6 115 29 C 129 53 97 49 105 34 M 316 88 C 275 49 232 61 190 78 C 149 95 122 80 150 54 C 177 31 239 36 259 65 C 284 99 248 104 237 88 M 316 88 C 277 18 219 18 171 44 C 120 70 66 116 21 75 C -18 39 7 -10 37 0 C 69 10 45 35 42 20 M 316 88 C 302 52 228 61 176 30 C 118 -5 138 48 230 64" fill="#00000000" stroke="black" strokeWidth="2.5">
+          <transforms>
+            <Affine mxx="-1" mxy="0" tx="648" myx="0" myy="1" ty="0"/>
+          </transforms>
+        </SVGPath>
+      </children>
+    </Group>
+    <Group>
+      <children>
+        <Rectangle x="523" y="300" width="234" height="54" fill="#FFFFFF" stroke="#000000" strokeWidth="2" arcWidth="8" arcHeight="8"/>
+        <Text text="LOG IN" y="335" fill="#000000" textOrigin="BASELINE" x="0" wrappingWidth="1280" textAlignment="CENTER" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 24px; -fx-font-weight: normal; -fx-font-style: normal;"/>
+      </children>
+    </Group>
+    <Group>
+      <children>
+        <Rectangle x="523" y="385" width="234" height="54" fill="#FFFFFF" stroke="#000000" strokeWidth="2" arcWidth="8" arcHeight="8"/>
+        <Text text="SIGN UP" y="420" fill="#000000" textOrigin="BASELINE" x="0" wrappingWidth="1280" textAlignment="CENTER" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 24px; -fx-font-weight: normal; -fx-font-style: normal;"/>
+      </children>
+    </Group>
+    <Text text="Adaptive Reading Game" y="690" fill="#555555" textOrigin="BASELINE" x="0" wrappingWidth="1280" textAlignment="CENTER" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 17px; -fx-font-weight: normal; -fx-font-style: normal;"/>
+    <Button layoutX="523" layoutY="300" prefWidth="234" prefHeight="54" minWidth="234" minHeight="54" maxWidth="234" maxHeight="54" id="uiux-to-06" accessibleText="LOG IN" accessibleHelp="Visual prototype route to screen 06" styleClass="uiux-hotspot" onAction="#navigate"/>
+    <Button layoutX="523" layoutY="385" prefWidth="234" prefHeight="54" minWidth="234" minHeight="54" maxWidth="234" maxHeight="54" id="uiux-to-02" accessibleText="SIGN UP" accessibleHelp="Visual prototype route to screen 02" styleClass="uiux-hotspot" onAction="#navigate"/>
+  </children>
+</Pane>

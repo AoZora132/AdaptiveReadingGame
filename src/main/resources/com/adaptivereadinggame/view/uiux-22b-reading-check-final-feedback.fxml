@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.transform.Affine?>
+<Pane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.adaptivereadinggame.uiux.UiuxScreenController" id="uiux-screen-22b" prefWidth="1280.0" prefHeight="720.0" minWidth="1280.0" minHeight="720.0" maxWidth="1280.0" maxHeight="720.0">
+  <fx:define>
+    <LinearGradient fx:id="burgundy" startX="0" startY="0" endX="0" endY="1" proportional="true">
+      <stops>
+        <Stop offset="0" color="#A82234"/>
+        <Stop offset="1" color="#73121F"/>
+      </stops>
+    </LinearGradient>
+  </fx:define>
+  <children>
+    <Rectangle x="0" y="0" width="1280" height="720" fill="#FFFFFF"/>
+    <Text text="Chapter 1: Reading Check" y="50" fill="#73121F" textOrigin="BASELINE" x="40" textAlignment="LEFT" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 26px; -fx-font-weight: bold; -fx-font-style: normal;"/>
+    <Rectangle x="200" y="155" width="880" height="415" fill="$burgundy" stroke="#D4AF37" strokeWidth="3" arcWidth="32" arcHeight="32"/>
+    <Text text="CORRECT" y="220" fill="#FFF8DC" textOrigin="BASELINE" x="0" wrappingWidth="1280" textAlignment="CENTER" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 34px; -fx-font-weight: bold; -fx-font-style: normal;"/>
+    <Text text="Your answer: B — keep the message private." y="275" fill="#FFFFFF" textOrigin="BASELINE" x="0" wrappingWidth="1280" textAlignment="CENTER" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 23px; -fx-font-weight: normal; -fx-font-style: normal;"/>
+    <Text text="The passage says Mara did not want anyone else" y="330" fill="#FFFFFF" textOrigin="BASELINE" x="0" wrappingWidth="1280" textAlignment="CENTER" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 24px; -fx-font-weight: normal; -fx-font-style: normal;"/>
+    <Text text="to see the message. That shows she wanted privacy." y="363.6" fill="#FFFFFF" textOrigin="BASELINE" x="0" wrappingWidth="1280" textAlignment="CENTER" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 24px; -fx-font-weight: normal; -fx-font-style: normal;"/>
+    <Text text="Your first answer has been recorded." y="419" fill="#FFF8DC" textOrigin="BASELINE" x="0" wrappingWidth="1280" textAlignment="CENTER" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 20px; -fx-font-weight: normal; -fx-font-style: normal;"/>
+    <Group>
+      <children>
+        <Rectangle x="480" y="471" width="320" height="54" fill="#D4AF37" stroke="#D4AF37" strokeWidth="2" arcWidth="8" arcHeight="8"/>
+        <Text text="VIEW RESULTS" y="506" fill="#73121F" textOrigin="BASELINE" x="0" wrappingWidth="1280" textAlignment="CENTER" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 24px; -fx-font-weight: bold; -fx-font-style: normal;"/>
+      </children>
+    </Group>
+    <Text text="Feedback teaches the reading skill. Do not let the player resubmit for a higher score." y="690" fill="#555555" textOrigin="BASELINE" x="0" wrappingWidth="1280" textAlignment="CENTER" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 17px; -fx-font-weight: normal; -fx-font-style: normal;"/>
+    <Button layoutX="480" layoutY="471" prefWidth="320" prefHeight="54" minWidth="320" minHeight="54" maxWidth="320" maxHeight="54" id="uiux-to-23" accessibleText="VIEW RESULTS" accessibleHelp="Visual prototype route to screen 23" styleClass="uiux-hotspot" onAction="#navigate"/>
+  </children>
+</Pane>
