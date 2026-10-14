@@ -1,0 +1,41 @@
+.prototype-header {
+    -fx-background-color: #f8f5ef;
+}
+
+.prototype-title {
+    -fx-font-family: "Times New Roman";
+    -fx-font-size: 24px;
+    -fx-text-fill: #73121f;
+}
+
+.prototype-notice {
+    -fx-font-family: "Georgia";
+    -fx-font-size: 13px;
+    -fx-text-fill: #444444;
+}
+
+.prototype-toolbar {
+    -fx-background-color: #efe9e2;
+    -fx-border-color: #d4af37 transparent transparent transparent;
+    -fx-border-width: 2 0 0 0;
+}
+
+.uiux-hotspot {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-padding: 0;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+}
+
+.uiux-hotspot:hover {
+    -fx-background-color: rgba(212, 175, 55, 0.18);
+    -fx-border-color: rgba(115, 18, 31, 0.75);
+    -fx-border-width: 1px;
+}
+
+.uiux-hotspot:focused {
+    -fx-background-color: rgba(212, 175, 55, 0.22);
+    -fx-border-color: #d4af37;
+    -fx-border-width: 3px;
+}
