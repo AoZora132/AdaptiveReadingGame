@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.transform.Affine?>
+<Pane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.adaptivereadinggame.uiux.UiuxScreenController" id="uiux-screen-23" prefWidth="1280.0" prefHeight="720.0" minWidth="1280.0" minHeight="720.0" maxWidth="1280.0" maxHeight="720.0">
+  <fx:define>
+    <LinearGradient fx:id="burgundy" startX="0" startY="0" endX="0" endY="1" proportional="true">
+      <stops>
+        <Stop offset="0" color="#A82234"/>
+        <Stop offset="1" color="#73121F"/>
+      </stops>
+    </LinearGradient>
+  </fx:define>
+  <children>
+    <Rectangle x="0" y="0" width="1280" height="720" fill="#FFFFFF"/>
+    <Rectangle x="0" y="0" width="1280" height="720" fill="#262626"/>
+    <Rectangle x="300" y="190" width="680" height="330" fill="$burgundy" stroke="#D4AF37" strokeWidth="3" arcWidth="30" arcHeight="30"/>
+    <Text text="PREPARING YOUR NEXT CHALLENGE" y="257" fill="#FFF8DC" textOrigin="BASELINE" x="0" wrappingWidth="1280" textAlignment="CENTER" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 29px; -fx-font-weight: bold; -fx-font-style: normal;"/>
+    <Text text="Your answers have been recorded." y="321" fill="#FFFFFF" textOrigin="BASELINE" x="0" wrappingWidth="1280" textAlignment="CENTER" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 23px; -fx-font-weight: normal; -fx-font-style: normal;"/>
+    <Text text="Reviewing your recent reading performance..." y="353.2" fill="#FFFFFF" textOrigin="BASELINE" x="0" wrappingWidth="1280" textAlignment="CENTER" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 23px; -fx-font-weight: normal; -fx-font-style: normal;"/>
+    <Group>
+      <children>
+        <Rectangle x="375" y="405" width="240" height="54" fill="#D4AF37" stroke="#D4AF37" strokeWidth="2" arcWidth="8" arcHeight="8"/>
+        <Text text="NEXT" y="440" fill="#73121F" textOrigin="BASELINE" x="0" wrappingWidth="1280" textAlignment="CENTER" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 24px; -fx-font-weight: bold; -fx-font-style: normal;"/>
+      </children>
+    </Group>
+    <Group>
+      <children>
+        <Rectangle x="645" y="405" width="260" height="54" fill="#D4AF37" stroke="#D4AF37" strokeWidth="2" arcWidth="8" arcHeight="8"/>
+        <Text text="MODEL UNAVAILABLE" y="440" fill="#73121F" textOrigin="BASELINE" x="0" wrappingWidth="1280" textAlignment="CENTER" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 24px; -fx-font-weight: bold; -fx-font-style: normal;"/>
+      </children>
+    </Group>
+    <Button layoutX="375" layoutY="405" prefWidth="240" prefHeight="54" minWidth="240" minHeight="54" maxWidth="240" maxHeight="54" id="uiux-to-24" accessibleText="NEXT" accessibleHelp="Visual prototype route to screen 24" styleClass="uiux-hotspot" onAction="#navigate"/>
+    <Button layoutX="645" layoutY="405" prefWidth="260" prefHeight="54" minWidth="260" minHeight="54" maxWidth="260" maxHeight="54" id="uiux-to-25" accessibleText="MODEL UNAVAILABLE" accessibleHelp="Visual prototype route to screen 25" styleClass="uiux-hotspot" onAction="#navigate"/>
+  </children>
+</Pane>

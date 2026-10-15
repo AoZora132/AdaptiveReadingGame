@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.transform.Affine?>
+<Pane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.adaptivereadinggame.uiux.UiuxScreenController" id="uiux-screen-29" prefWidth="1280.0" prefHeight="720.0" minWidth="1280.0" minHeight="720.0" maxWidth="1280.0" maxHeight="720.0">
+  <fx:define>
+    <LinearGradient fx:id="burgundy" startX="0" startY="0" endX="0" endY="1" proportional="true">
+      <stops>
+        <Stop offset="0" color="#A82234"/>
+        <Stop offset="1" color="#73121F"/>
+      </stops>
+    </LinearGradient>
+  </fx:define>
+  <children>
+    <Rectangle x="0" y="0" width="1280" height="720" fill="#FFFFFF"/>
+    <Rectangle x="0" y="0" width="253" height="720" fill="#EEEEEE"/>
+    <Group>
+      <children>
+        <Rectangle x="37" y="199" width="74.6" height="39" fill="#00000000"/>
+        <Text text="SAVE" y="220" fill="#A82234" textOrigin="BASELINE" x="47" textAlignment="LEFT" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 21px; -fx-font-weight: normal; -fx-font-style: normal;"/>
+      </children>
+    </Group>
+    <Group>
+      <children>
+        <Rectangle x="37" y="251" width="74.6" height="39" fill="#00000000"/>
+        <Text text="LOAD" y="272" fill="#333333" textOrigin="BASELINE" x="47" textAlignment="LEFT" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 21px; -fx-font-weight: normal; -fx-font-style: normal;"/>
+      </children>
+    </Group>
+    <Group>
+      <children>
+        <Rectangle x="37" y="303" width="74.6" height="39" fill="#00000000"/>
+        <Text text="QUIT" y="324" fill="#333333" textOrigin="BASELINE" x="47" textAlignment="LEFT" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 21px; -fx-font-weight: normal; -fx-font-style: normal;"/>
+      </children>
+    </Group>
+    <Group>
+      <children>
+        <Rectangle x="37" y="355" width="129.2" height="39" fill="#00000000"/>
+        <Text text="SETTINGS" y="376" fill="#333333" textOrigin="BASELINE" x="47" textAlignment="LEFT" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 21px; -fx-font-weight: normal; -fx-font-style: normal;"/>
+      </children>
+    </Group>
+    <Group>
+      <children>
+        <Rectangle x="37" y="407" width="142.85000000000002" height="39" fill="#00000000"/>
+        <Text text="MAIN MENU" y="428" fill="#333333" textOrigin="BASELINE" x="47" textAlignment="LEFT" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 21px; -fx-font-weight: normal; -fx-font-style: normal;"/>
+      </children>
+    </Group>
+    <Group>
+      <children>
+        <Rectangle x="37" y="494" width="101.9" height="39" fill="#00000000"/>
+        <Text text="RETURN" y="515" fill="#333333" textOrigin="BASELINE" x="47" textAlignment="LEFT" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 21px; -fx-font-weight: normal; -fx-font-style: normal;"/>
+      </children>
+    </Group>
+    <Text text="SAVE" y="70" fill="#73121F" textOrigin="BASELINE" x="320" textAlignment="LEFT" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 34px; -fx-font-weight: bold; -fx-font-style: normal;"/>
+    <Text text="Choose an empty slot, or overwrite an existing save." y="106" fill="#555555" textOrigin="BASELINE" x="320" textAlignment="LEFT" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 18px; -fx-font-weight: normal; -fx-font-style: normal;"/>
+    <Group>
+      <children>
+        <Rectangle x="320" y="140" width="253" height="147" fill="#DCDCDC" stroke="#73121F" strokeWidth="2" arcWidth="12" arcHeight="12"/>
+        <Text text="Chapter 1: Beginning" y="175" fill="#73121F" textOrigin="BASELINE" x="0" wrappingWidth="1280" textAlignment="CENTER" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 20px; -fx-font-weight: bold; -fx-font-style: normal;"/>
+        <Text text="Scene 4 · Easy" y="213" fill="#555555" textOrigin="BASELINE" x="0" wrappingWidth="1280" textAlignment="CENTER" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 16px; -fx-font-weight: normal; -fx-font-style: normal;"/>
+        <Text text="Reading check 0 / 5" y="235.4" fill="#555555" textOrigin="BASELINE" x="0" wrappingWidth="1280" textAlignment="CENTER" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 16px; -fx-font-weight: normal; -fx-font-style: normal;"/>
+        <Text text="Saved just now" y="257.8" fill="#555555" textOrigin="BASELINE" x="0" wrappingWidth="1280" textAlignment="CENTER" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 16px; -fx-font-weight: normal; -fx-font-style: normal;"/>
+        <Text text="SLOT 1" y="317" fill="#555555" textOrigin="BASELINE" x="0" wrappingWidth="1280" textAlignment="CENTER" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 17px; -fx-font-weight: normal; -fx-font-style: normal;"/>
+      </children>
+    </Group>
+    <Group>
+      <children>
+        <Rectangle x="607" y="140" width="253" height="147" fill="#DCDCDC" stroke="#73121F" strokeWidth="2" arcWidth="12" arcHeight="12"/>
+        <Text text="EMPTY" y="175" fill="#555555" textOrigin="BASELINE" x="0" wrappingWidth="1280" textAlignment="CENTER" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 20px; -fx-font-weight: normal; -fx-font-style: normal;"/>
+        <Text text="Click to save here" y="228" fill="#555555" textOrigin="BASELINE" x="0" wrappingWidth="1280" textAlignment="CENTER" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 16px; -fx-font-weight: normal; -fx-font-style: normal;"/>
+        <Text text="SLOT 2" y="317" fill="#555555" textOrigin="BASELINE" x="0" wrappingWidth="1280" textAlignment="CENTER" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 17px; -fx-font-weight: normal; -fx-font-style: normal;"/>
+      </children>
+    </Group>
+    <Group>
+      <children>
+        <Rectangle x="894" y="140" width="253" height="147" fill="#DCDCDC" stroke="#73121F" strokeWidth="2" arcWidth="12" arcHeight="12"/>
+        <Text text="EMPTY" y="175" fill="#555555" textOrigin="BASELINE" x="0" wrappingWidth="1280" textAlignment="CENTER" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 20px; -fx-font-weight: normal; -fx-font-style: normal;"/>
+        <Text text="Click to save here" y="228" fill="#555555" textOrigin="BASELINE" x="0" wrappingWidth="1280" textAlignment="CENTER" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 16px; -fx-font-weight: normal; -fx-font-style: normal;"/>
+        <Text text="SLOT 3" y="317" fill="#555555" textOrigin="BASELINE" x="0" wrappingWidth="1280" textAlignment="CENTER" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 17px; -fx-font-weight: normal; -fx-font-style: normal;"/>
+      </children>
+    </Group>
+    <Group>
+      <children>
+        <Rectangle x="320" y="360" width="253" height="147" fill="#DCDCDC" stroke="#73121F" strokeWidth="2" arcWidth="12" arcHeight="12"/>
+        <Text text="EMPTY" y="395" fill="#555555" textOrigin="BASELINE" x="0" wrappingWidth="1280" textAlignment="CENTER" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 20px; -fx-font-weight: normal; -fx-font-style: normal;"/>
+        <Text text="Click to save here" y="448" fill="#555555" textOrigin="BASELINE" x="0" wrappingWidth="1280" textAlignment="CENTER" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 16px; -fx-font-weight: normal; -fx-font-style: normal;"/>
+        <Text text="SLOT 4" y="537" fill="#555555" textOrigin="BASELINE" x="0" wrappingWidth="1280" textAlignment="CENTER" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 17px; -fx-font-weight: normal; -fx-font-style: normal;"/>
+      </children>
+    </Group>
+    <Group>
+      <children>
+        <Rectangle x="607" y="360" width="253" height="147" fill="#DCDCDC" stroke="#73121F" strokeWidth="2" arcWidth="12" arcHeight="12"/>
+        <Text text="EMPTY" y="395" fill="#555555" textOrigin="BASELINE" x="0" wrappingWidth="1280" textAlignment="CENTER" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 20px; -fx-font-weight: normal; -fx-font-style: normal;"/>
+        <Text text="Click to save here" y="448" fill="#555555" textOrigin="BASELINE" x="0" wrappingWidth="1280" textAlignment="CENTER" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 16px; -fx-font-weight: normal; -fx-font-style: normal;"/>
+        <Text text="SLOT 5" y="537" fill="#555555" textOrigin="BASELINE" x="0" wrappingWidth="1280" textAlignment="CENTER" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 17px; -fx-font-weight: normal; -fx-font-style: normal;"/>
+      </children>
+    </Group>
+    <Group>
+      <children>
+        <Rectangle x="894" y="360" width="253" height="147" fill="#DCDCDC" stroke="#73121F" strokeWidth="2" arcWidth="12" arcHeight="12"/>
+        <Text text="EMPTY" y="395" fill="#555555" textOrigin="BASELINE" x="0" wrappingWidth="1280" textAlignment="CENTER" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 20px; -fx-font-weight: normal; -fx-font-style: normal;"/>
+        <Text text="Click to save here" y="448" fill="#555555" textOrigin="BASELINE" x="0" wrappingWidth="1280" textAlignment="CENTER" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 16px; -fx-font-weight: normal; -fx-font-style: normal;"/>
+        <Text text="SLOT 6" y="537" fill="#555555" textOrigin="BASELINE" x="0" wrappingWidth="1280" textAlignment="CENTER" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 17px; -fx-font-weight: normal; -fx-font-style: normal;"/>
+      </children>
+    </Group>
+    <Text text="AUTO   &lt;   1   2   3   4   5   6   7   8   9   10   &gt;" y="632" fill="#555555" textOrigin="BASELINE" x="0" wrappingWidth="1280" textAlignment="CENTER" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 18px; -fx-font-weight: normal; -fx-font-style: normal;"/>
+    <Text text="Page 1 layout retained from the UI. Slot count and pagination need a shared backend contract." y="690" fill="#555555" textOrigin="BASELINE" x="0" wrappingWidth="1280" textAlignment="CENTER" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 17px; -fx-font-weight: normal; -fx-font-style: normal;"/>
+    <Rectangle x="0" y="0" width="1280" height="720" fill="#000000" opacity="0.45"/>
+    <Rectangle x="290" y="220" width="700" height="295" fill="#FFFFFF" stroke="#000000" strokeWidth="3" arcWidth="24" arcHeight="24"/>
+    <Text text="OVERWRITE SLOT 1?" y="278" fill="#000000" textOrigin="BASELINE" x="0" wrappingWidth="1280" textAlignment="CENTER" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 28px; -fx-font-weight: bold; -fx-font-style: normal;"/>
+    <Text text="This will replace Chapter 1: Beginning." y="329" fill="#555555" textOrigin="BASELINE" x="0" wrappingWidth="1280" textAlignment="CENTER" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 20px; -fx-font-weight: normal; -fx-font-style: normal;"/>
+    <Text text="Your other save slots will not be changed." y="357" fill="#555555" textOrigin="BASELINE" x="0" wrappingWidth="1280" textAlignment="CENTER" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 20px; -fx-font-weight: normal; -fx-font-style: normal;"/>
+    <Group>
+      <children>
+        <Rectangle x="345" y="421" width="280" height="54" fill="#FFFFFF" stroke="#000000" strokeWidth="2" arcWidth="8" arcHeight="8"/>
+        <Text text="OVERWRITE" y="456" fill="#000000" textOrigin="BASELINE" x="0" wrappingWidth="1280" textAlignment="CENTER" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 24px; -fx-font-weight: normal; -fx-font-style: normal;"/>
+      </children>
+    </Group>
+    <Group>
+      <children>
+        <Rectangle x="655" y="421" width="280" height="54" fill="#FFFFFF" stroke="#000000" strokeWidth="2" arcWidth="8" arcHeight="8"/>
+        <Text text="CANCEL" y="456" fill="#000000" textOrigin="BASELINE" x="0" wrappingWidth="1280" textAlignment="CENTER" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 24px; -fx-font-weight: normal; -fx-font-style: normal;"/>
+      </children>
+    </Group>
+    <Button layoutX="345" layoutY="421" prefWidth="280" prefHeight="54" minWidth="280" minHeight="54" maxWidth="280" maxHeight="54" id="uiux-to-28" accessibleText="OVERWRITE" accessibleHelp="Visual prototype route to screen 28" styleClass="uiux-hotspot" onAction="#navigate"/>
+    <Button layoutX="655" layoutY="421" prefWidth="280" prefHeight="54" minWidth="280" minHeight="54" maxWidth="280" maxHeight="54" id="uiux-to-27" accessibleText="CANCEL" accessibleHelp="Visual prototype route to screen 27" styleClass="uiux-hotspot" onAction="#navigate"/>
+  </children>
+</Pane>

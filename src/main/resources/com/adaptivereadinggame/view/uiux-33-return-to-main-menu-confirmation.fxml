@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.transform.Affine?>
+<Pane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.adaptivereadinggame.uiux.UiuxScreenController" id="uiux-screen-33" prefWidth="1280.0" prefHeight="720.0" minWidth="1280.0" minHeight="720.0" maxWidth="1280.0" maxHeight="720.0">
+  <fx:define>
+    <LinearGradient fx:id="burgundy" startX="0" startY="0" endX="0" endY="1" proportional="true">
+      <stops>
+        <Stop offset="0" color="#A82234"/>
+        <Stop offset="1" color="#73121F"/>
+      </stops>
+    </LinearGradient>
+  </fx:define>
+  <children>
+    <Rectangle x="0" y="0" width="1280" height="720" fill="#FFFFFF"/>
+    <Text text="Chapter 1: Beginning" y="50" fill="#73121F" textOrigin="BASELINE" x="40" textAlignment="LEFT" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 26px; -fx-font-weight: bold; -fx-font-style: normal;"/>
+    <Group>
+      <children>
+        <Rectangle x="1090" y="24" width="150" height="54" fill="#FFFFFF" stroke="#000000" strokeWidth="2" arcWidth="8" arcHeight="8"/>
+        <Text text="MENU" y="59" fill="#000000" textOrigin="BASELINE" x="0" wrappingWidth="1280" textAlignment="CENTER" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 24px; -fx-font-weight: normal; -fx-font-style: normal;"/>
+      </children>
+    </Group>
+    <Rectangle x="240" y="505" width="800" height="147" fill="$burgundy" stroke="#D4AF37" strokeWidth="3" arcWidth="28" arcHeight="28"/>
+    <Rectangle x="540" y="481" width="200" height="34" fill="$burgundy" stroke="#D4AF37" strokeWidth="2" arcWidth="16" arcHeight="16"/>
+    <Text text="???" y="505" fill="#FFF8DC" textOrigin="BASELINE" x="0" wrappingWidth="1280" textAlignment="CENTER" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 17px; -fx-font-weight: bold; -fx-font-style: normal;"/>
+    <Text text="Pleased to meet you." y="555" fill="#FFFFFF" textOrigin="BASELINE" x="270" textAlignment="LEFT" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 22px; -fx-font-weight: normal; -fx-font-style: normal;"/>
+    <Group>
+      <children>
+        <Rectangle x="900" y="583" width="112" height="54" fill="#D4AF37" stroke="#D4AF37" strokeWidth="2" arcWidth="8" arcHeight="8"/>
+        <Text text="NEXT" y="618" fill="#73121F" textOrigin="BASELINE" x="0" wrappingWidth="1280" textAlignment="CENTER" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 24px; -fx-font-weight: bold; -fx-font-style: normal;"/>
+      </children>
+    </Group>
+    <Text text="Click NEXT or press Space to continue. Esc opens the game menu." y="690" fill="#555555" textOrigin="BASELINE" x="0" wrappingWidth="1280" textAlignment="CENTER" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 17px; -fx-font-weight: normal; -fx-font-style: normal;"/>
+    <Rectangle x="0" y="0" width="1280" height="720" fill="#000000" opacity="0.45"/>
+    <Rectangle x="290" y="220" width="700" height="295" fill="#FFFFFF" stroke="#000000" strokeWidth="3" arcWidth="24" arcHeight="24"/>
+    <Text text="RETURN TO MAIN MENU?" y="278" fill="#000000" textOrigin="BASELINE" x="0" wrappingWidth="1280" textAlignment="CENTER" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 28px; -fx-font-weight: bold; -fx-font-style: normal;"/>
+    <Text text="Any unsaved progress will be lost." y="329" fill="#555555" textOrigin="BASELINE" x="0" wrappingWidth="1280" textAlignment="CENTER" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 20px; -fx-font-weight: normal; -fx-font-style: normal;"/>
+    <Text text="Saved checkpoints will remain available." y="357" fill="#555555" textOrigin="BASELINE" x="0" wrappingWidth="1280" textAlignment="CENTER" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 20px; -fx-font-weight: normal; -fx-font-style: normal;"/>
+    <Group>
+      <children>
+        <Rectangle x="345" y="421" width="280" height="54" fill="#FFFFFF" stroke="#000000" strokeWidth="2" arcWidth="8" arcHeight="8"/>
+        <Text text="MAIN MENU" y="456" fill="#000000" textOrigin="BASELINE" x="0" wrappingWidth="1280" textAlignment="CENTER" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 24px; -fx-font-weight: normal; -fx-font-style: normal;"/>
+      </children>
+    </Group>
+    <Group>
+      <children>
+        <Rectangle x="655" y="421" width="280" height="54" fill="#FFFFFF" stroke="#000000" strokeWidth="2" arcWidth="8" arcHeight="8"/>
+        <Text text="CANCEL" y="456" fill="#000000" textOrigin="BASELINE" x="0" wrappingWidth="1280" textAlignment="CENTER" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 24px; -fx-font-weight: normal; -fx-font-style: normal;"/>
+      </children>
+    </Group>
+    <Button layoutX="345" layoutY="421" prefWidth="280" prefHeight="54" minWidth="280" minHeight="54" maxWidth="280" maxHeight="54" id="uiux-to-09" accessibleText="MAIN MENU" accessibleHelp="Visual prototype route to screen 09" styleClass="uiux-hotspot" onAction="#navigate"/>
+    <Button layoutX="655" layoutY="421" prefWidth="280" prefHeight="54" minWidth="280" minHeight="54" maxWidth="280" maxHeight="54" id="uiux-to-26" accessibleText="CANCEL" accessibleHelp="Visual prototype route to screen 26" styleClass="uiux-hotspot" onAction="#navigate"/>
+  </children>
+</Pane>
