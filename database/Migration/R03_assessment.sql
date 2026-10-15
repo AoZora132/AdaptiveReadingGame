@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS questions (
     -- NOTE: MySQL cannot check that correct_choice_index exists in question_choices.
     -- The service or an integration test must check it.
 );
- 
+
 CREATE TABLE IF NOT EXISTS question_choices (
     question_id   CHAR(36)     NOT NULL,
     choice_index  INT          NOT NULL,                  -- 0, 1, 2 ... order shown on screen
@@ -20,7 +20,7 @@ CREATE TABLE IF NOT EXISTS question_choices (
     PRIMARY KEY (question_id, choice_index),
     FOREIGN KEY (question_id) REFERENCES questions(id) ON DELETE CASCADE
 );
- 
+
 -- The student's FIRST selected answer, saved once BEFORE feedback is shown.
 -- PLACEHOLDER: confirm columns with Dev 2 (assessment session design).
 CREATE TABLE IF NOT EXISTS first_answer_drafts (
@@ -34,7 +34,7 @@ CREATE TABLE IF NOT EXISTS first_answer_drafts (
     FOREIGN KEY (question_id, selected_choice_index)
         REFERENCES question_choices(question_id, choice_index) ON DELETE CASCADE
 );
- 
+
 -- A completed chapter assessment. Insert-once per student + chapter.
 CREATE TABLE IF NOT EXISTS assessments (
     id                   CHAR(36)     PRIMARY KEY,      -- the Attempt UUID
@@ -45,10 +45,11 @@ CREATE TABLE IF NOT EXISTS assessments (
     assessed_difficulty  ENUM('EASY','MEDIUM','HARD') NOT NULL,
     next_difficulty      ENUM('EASY','MEDIUM','HARD') NOT NULL,
     completed_at         TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
+    -- PLACEHOLDER: when the group decides the logical-chapter replay policy,
+    -- this rule may change to use logical_chapter_id instead of chapter_id.
     UNIQUE (student_id, chapter_id),
     CHECK (total_questions BETWEEN 1 AND 100),
     CHECK (correct_answers >= 0 AND correct_answers <= total_questions),
     FOREIGN KEY (student_id) REFERENCES students(id) ON DELETE CASCADE,
     FOREIGN KEY (chapter_id) REFERENCES chapters(id) ON DELETE CASCADE
 );
- 

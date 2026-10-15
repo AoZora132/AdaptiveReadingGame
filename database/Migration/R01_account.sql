@@ -1,6 +1,10 @@
 -- This SQL is for the player's account information.
  
 -- Public account info. No password data here.
+
+CREATE DATABASE IF NOT EXISTS adaptive_reading;
+USE adaptive_reading;
+
 CREATE TABLE IF NOT EXISTS accounts (
     id            CHAR(36)     PRIMARY KEY,
     username      VARCHAR(50)  NOT NULL UNIQUE,   -- store the NORMALIZED username
