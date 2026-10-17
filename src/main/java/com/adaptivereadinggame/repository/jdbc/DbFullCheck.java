@@ -1,4 +1,4 @@
-// Test Java file created by: Claude But still not working.
+// Test Java file created by: Claude
 
 package com.adaptivereadinggame.repository.jdbc;
 
@@ -20,7 +20,7 @@ public class DbFullCheck {
 
     public static void main(String[] args) {
         String url  = env("DB_URL", "jdbc:mysql://localhost:3306/adaptive_reading");
-        String user = env("DB_USER", "argdev");
+        String user = env("DB_USER", "Dev3");
         String pass = System.getenv("DB_PASS");
         if (pass == null) {
             System.out.println("Set DB_PASS first:  export DB_PASS='yourpassword'");
