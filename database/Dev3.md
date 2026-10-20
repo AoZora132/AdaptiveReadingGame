@@ -14,10 +14,10 @@
 - sudo apt install -y mysql-server
 - sudo service mysql start
 - sleep 10
-- export DB_PASS='ArgDev2026'
+- export DB_PASS='Dev3Password'
 - sudo mysql -e "CREATE DATABASE IF NOT EXISTS adaptive_reading;"
-- sudo mysql -e "CREATE USER IF NOT EXISTS 'argdev'@'localhost' IDENTIFIED BY '$DB_PASS';"
-- sudo mysql -e "GRANT ALL PRIVILEGES ON adaptive_reading.* TO 'argdev'@'localhost'; FLUSH PRIVILEGES;"
+- sudo mysql -e "CREATE USER IF NOT EXISTS 'Dev3'@'localhost' IDENTIFIED BY '$DB_PASS';"
+- sudo mysql -e "GRANT ALL PRIVILEGES ON adaptive_reading.* TO 'Dev3'@'localhost'; FLUSH PRIVILEGES;"
 - bash database/Setup.sh
 - mvn -B -DskipTests compile
 - mvn -q dependency:build-classpath -Dmdep.outputFile=/tmp/cp.txt
@@ -36,6 +36,7 @@
 ( Export the password )
 
 # Terminal commands if theres an error on starting, Fix the socket permision
+If theres an error "ERROR 2002 (HY000)" do these:
 - sudo mkdir -p /var/run/mysqld
 - sudo chown mysql:mysql /var/run/mysqld
 - sudo chmod 755 /var/run/mysqld
@@ -58,3 +59,12 @@
 ( Checks the database )
 - java -cp "target/classes:$(cat /tmp/cp.txt)" com.adaptivereadinggame.repository.jdbc.StoryPlayTest
 ( This will run the code )
+
+# SQL Tools Connection
+Enter these informations when creating connection
+- Connection name: adaptive_reading
+- Server: localhost
+- Port: 3306
+- Database: adaptive_reading
+- Username: "Dev3"
+At the top box, it will ask for password. Enter the password that was set ("Dev3Password") then press enter. (The box may not show what your typing to hide the password)
