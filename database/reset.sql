@@ -1,0 +1,14 @@
+USE adaptive_reading;
+SET FOREIGN_KEY_CHECKS = 0;
+DROP TABLE IF EXISTS save_slots;
+DROP TABLE IF EXISTS assessments;
+DROP TABLE IF EXISTS first_answer_drafts;
+DROP TABLE IF EXISTS question_choices;
+DROP TABLE IF EXISTS questions;
+DROP TABLE IF EXISTS story_choices;
+DROP TABLE IF EXISTS story_nodes;
+DROP TABLE IF EXISTS chapters;
+DROP TABLE IF EXISTS students;
+DROP TABLE IF EXISTS credentials;
+DROP TABLE IF EXISTS accounts;
+SET FOREIGN_KEY_CHECKS = 1;
