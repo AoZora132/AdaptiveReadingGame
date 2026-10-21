@@ -1,5 +1,5 @@
 -- =====================================================================
--- STORY: CHAPTER 1, PART 1 (intro)
+-- STORY: CHAPTER 1, PART 1 (intro)      source: ScriptPart1.docx
 -- Loads once into a fresh database. After EDITING anything here, reload with:
 --     bash database/setup.sh --reset
 -- (Running it twice without --reset gives "Duplicate entry". That is normal.)
